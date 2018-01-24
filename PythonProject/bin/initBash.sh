@@ -19,6 +19,8 @@ fi
 if [-f "$file"]
 then
 	echo "$file found."
+	cp $file $dest
+	source ~/.bash_profile
 else
 	echo "ERROR: $file not found."
 fi
