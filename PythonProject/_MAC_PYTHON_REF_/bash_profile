@@ -15,4 +15,6 @@ alias gcv="git commit -v"
 alias gcm="git commit -m"
 #School
 alias cdPY="cd ~/Desktop/REPO/PythonProject/"
+alias gcCR="git clone https://github.com/justinglobal/GA306_a.git CLASS_REPO"
 alias cdCR="cd ~/Desktop/CLASS_REPO/"
+
