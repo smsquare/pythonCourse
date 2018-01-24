@@ -2,6 +2,8 @@
 # $ nano .bash_profile
 # to create the .bash_profile file on the system.
 
+# In nano, 'control+o' to write to file; "control+x' to exit
+
 # To refresh the bash environment
 # $ source ~/.bash_profile
 
