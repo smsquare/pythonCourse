@@ -9,3 +9,21 @@ c.) polyTorus -r 1 -sr 0.5 -tw 5 -sx 20 -sy 20 -ch 1;
 	mc.polyTorus(radius=1, sectionRadius=0.5, twist=5, subdivisionsX=20, subdivisionsY=20, constructionHistory=1);
 d.) polyCube -w 9 -h 9 -d 9 -sx 3 -sy 3 -sz 3 -ch 1;
 	mc.polyCube(width=9, height=9, depth=9, subdivisionsX=3, subdivisionsY=3, subdivisionsZ=3, constructionHistory=1);
+
+For the following list: my_list = [2, 3, 7, 8, 9]
+
+What is the value of my_list[1]?
+	3
+What is the value of my_list[-1]?
+	9
+What is the value of my_list[:-1]?
+	[2, 3, 7, 8]
+What is the value of my_list[::-1]?
+	[9, 8, 7, 3, 2]
+What is the value of my_list[1:-1]?
+	[3, 7, 8]
+
+Reformat the print statement to use % string formatting: a = 5 b = 3 c = pow(a, b)
+print(str(a) + “ to the “ + str(b) + “ power is “ + str(c)) =>
+
+	print('%d to the %d to the %d' % (a, b, c));
