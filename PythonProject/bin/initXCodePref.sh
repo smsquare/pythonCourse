@@ -1,12 +1,10 @@
 #!/bin/bash
-
 currDir=${PWD##*/}
-
 # Ensure that the person is running the file from the PythonProject root folderd
 dirMustBe="PythonProject"
 
 # If you are in the proper directory, then the file will be here
-file="_MAC_PYTHON_REF_/Default.xccolortheme"
+file="_MAC_PYTHON_REF_/CUSTOM.xccolortheme"
 dest="/Users/student/Library/Developer/Xcode/UserData/FontAndColorThemes/Default.xccolortheme"
 
 if [ "$currDir" = "$dirMustBe" ]
@@ -20,8 +18,9 @@ if [ -f "$file" ]
 then
 	echo "$file found."
 	echo "currDir: $currDir"
-	rm $dest
+	#rm $dest
 	cp -v $file $dest
+	#source $dest
 else
 	echo "$file not found!"
 fi
