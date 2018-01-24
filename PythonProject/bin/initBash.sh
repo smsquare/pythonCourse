@@ -7,7 +7,7 @@ reqDir="PythonProject"
 
 #If you are in the correct folder then the .bash_profile file will be located here
 file="_MAC_PYTHON_REF_/bash_profile"
-dest="~/.bash_profile"
+dest="~"
 
 if [ "$currDir" = "$reqDir" ]
 then
@@ -19,7 +19,7 @@ fi
 if [ -f "$file" ]
 then
 	echo "$file found."
-	cp $file $dest
+	cp $file ~/.bash_profile
 	source ~/.bash_profile
 else
 	echo "ERROR: $file not found."
