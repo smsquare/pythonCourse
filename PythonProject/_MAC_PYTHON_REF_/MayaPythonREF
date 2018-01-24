@@ -1,0 +1,16 @@
+# All keywords that are off limits to use since they are in use already.
+import keyword;
+for kw in keyword.kwlist: print(kw);
+
+# To print out the flags of a command
+import maya.cmds as c;
+print(c.help('polyCube'));
+
+
+var = 6;
+
+# To print the memory address of a variable use id()
+print('address id', id(var));
+
+# To print the type of variable use type()
+print('datatype type', type(var));
