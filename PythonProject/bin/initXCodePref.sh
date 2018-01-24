@@ -5,7 +5,7 @@ dirMustBe="PythonProject"
 
 # If you are in the proper directory, then the file will be here
 file="_MAC_PYTHON_REF_/CUSTOM.xccolortheme"
-dest="/Users/student/Library/Developer/Xcode/UserData/FontAndColorThemes/Default.xccolortheme"
+dest="~/Library/Developer/Xcode/UserData/FontAndColorThemes/Default.xccolortheme"
 
 if [ "$currDir" = "$dirMustBe" ]
 then
@@ -17,10 +17,17 @@ fi
 if [ -f "$file" ]
 then
 	echo "$file found."
-	echo "currDir: $currDir"
-	#rm $dest
-	cp -v $file $dest
-	#source $dest
+		
+	if [ -f "$dest" ] 
+	then
+		echo "$dest file exists. Replacing now."
+		cp -v $file $dest
+	else
+		echo "Default profile doesnt exist. Creating it now."
+		mkdir ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
+		cp $file ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
+		mv ~/Library/Developer/Xcode/UserData/FontAndColorThemes/CUSTOM.xccolortheme /Users/student/Library/Developer/Xcode/UserData/FontAndColorThemes/Default.xccolortheme
+	fi
 else
 	echo "$file not found!"
 fi
