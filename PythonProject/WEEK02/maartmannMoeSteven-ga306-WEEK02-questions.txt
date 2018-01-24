@@ -1,0 +1,36 @@
+Steven Maartmann-Moe
+WEEK 02 Assignment 
+
+
+Name the four Maya programming interfaces.
+  (I'm not sure what you mean by 4, the only 3 I can tell are C++, Py, MEL, 
+	but the book says Maya Command Engine is one if I read it correctly.)
+	- C++
+	- Python
+	- MEL
+	- Maya Command Engine
+
+What are the three ways to run Python in Maya?
+	- Command Line
+	- Shelf
+	- Script Editor
+	
+What version of Python is being used in your version of Maya?
+	- 2.7.11 (default, Dec 21 2015, 22:48:54) [MSC v.1700 64 bit (AMD64)]
+	import sys;
+	print(sys.version);
+
+If you run this code:
+	test_variable = “12345” 
+a. What type of variable is the_answer?
+	String
+b. What Python command can you run to confirm this?
+	type()
+	
+Most Maya commands have these three modes: create, query, and edit. Explain what each means.
+	- Create: Create mode lets you create new objects in the scene, 
+		you dont have to do anything special to execute commands in create mode.
+	- Query: Query lets you gain information about an object. 
+		You must specify a command argument first then set query flag to True.	
+	- Edit: Edit lets you change information about an object. 
+		You must specify a command argument first then set edit flag to True.
