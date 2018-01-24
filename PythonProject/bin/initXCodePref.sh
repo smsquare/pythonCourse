@@ -24,8 +24,8 @@ then
 		cp -v $file $dest
 	else
 		echo "Default profile doesnt exist. Creating it now."
-		mkdir ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
-		cp $file ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
+		mkdir -p /Users/student/Library/Developer/Xcode/UserData/FontAndColorThemes/
+		cp $file /Users/student/Library/Developer/Xcode/UserData/FontAndColorThemes/
 		mv ~/Library/Developer/Xcode/UserData/FontAndColorThemes/CUSTOM.xccolortheme /Users/student/Library/Developer/Xcode/UserData/FontAndColorThemes/Default.xccolortheme
 	fi
 else
