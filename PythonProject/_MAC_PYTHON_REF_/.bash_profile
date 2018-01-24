@@ -14,4 +14,4 @@ alias gs="git status"
 alias gcv="git commit -v"
 alias gcm="git commit -m"
 #School
-
+alias cdPY="cd ~/Desktop/REPO/PythonProject/"
