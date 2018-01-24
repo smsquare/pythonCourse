@@ -6,7 +6,7 @@ currDir=${PWD##*/}
 reqDir="PythonProject"
 
 #If you are in the correct folder then the .bash_profile file will be located here
-file="_MAC_PYTHON_REF_/.bash_profile"
+file="_MAC_PYTHON_REF_/bash_profile"
 dest="~/.bash_profile"
 
 if [ "$currDir" = "$reqDir" ]
@@ -16,7 +16,7 @@ else
 	echo "ERROR: 'PythonProject' MUST be current working directory."
 fi
 
-if [-f "$file"]
+if [ -f "$file" ]
 then
 	echo "$file found."
 	cp $file $dest
