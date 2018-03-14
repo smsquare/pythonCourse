@@ -1,0 +1,8 @@
+#TODO: Create a set of tools / module for auto adjusting the root motion distance.
+#	 The goal of these tools is to provide them with an animation that can then
+#	 be adjusted based off of a scalar that is passed in.
+#	 This will adjust the distance traveled / value of the keyframe itself
+#	 without actually changing the timing of the keyframe itself.
+
+
+
